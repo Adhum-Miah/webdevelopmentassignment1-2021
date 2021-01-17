@@ -1,0 +1,135 @@
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    /*DISPLAY TITLE*/
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    /*BEGINNER IN WEB DEV TEXT*/
+}
+
+img {
+
+    height: 40vh;
+    border-style: none;
+    /*IMAGE*/
+}
+
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    text-align: center;
+    /*BACKGROUND IMAGE*/
+}
+
+nav {
+    color: white;
+    font-family: 'Orbitron' , sans-serif;
+    font-size: larger;
+    /*NAVIGATION FONT COLOUR*/
+}
+
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /*SITE REPORT PARAGRAPH TEXT COLOUR*/
+}   
+
+h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /*TEXT FONTS ON CV PAGE*/
+}
+
+br { 
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /*TEXT FONTS ON CV PAGE*/
+}   
+
+li {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /*TEXT FONTS ON CV PAGE*/
+}
+
+ul {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /*TEXT FONT FOR CONTACT PAGE FOR EMAIL*/
+}
+
+.container {
+    width: 96rem;
+    margin: 2rem auto;
+}
+.gallery-item {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all .3s;
+    overflow: hidden;
+    position: relative;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1.75rem;
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    object-fit: cover;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+.gallery-item:hover .middle {
+    opacity: 1;
+}
+.gallery-item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+/* Layout for the images */
+.text {
+    color: white;
+    font-size: 2.5em;
+    padding: 16px 32px;
+    font-family: 'Teko', sans-serif;
+}
+
+ul > a{
+    border:2px solid white;
+    padding: 0.5em;
+}
+
+@media (max-width: 500px) {
+    .gallery-item,
+    body{
+        max-width: 30%;
+        grid-column: 2;
+        font-family: 'Teko', sans-serif;
+        text-align: left;
+    }
+    div.container, h1 {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    div.text {
+        font-size: 5.5em;
+    } 
+}
